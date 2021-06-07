@@ -1,0 +1,68 @@
+
+Projection format conversion tool for 360 video: Version [TApp360_v1.0][Linux][GCC 7.5.0][64 bit] 
+
+CompactCodingFPFormat is automatically disabled for source video because it is only supported for OHP and ISP
+CompactCodingFPFormat is automatically disabled for output video because it is only supported for OHP and ISP
+
+Input          File                    : nyc_drive_2880x1920_24_1x1_16.yuv
+Output         File                    : (null)
+Reference      File                    : nyc_drive_2880x1920_24.yuv
+SphFile        File                    : sphere_655362.txt
+ViewPortFile   File                    : NULL
+SpherePointsFile File                  : NULL
+Real     Format                        : 2880x1920 24Hz
+Internal Format                        : 2880x1920 24Hz
+Frame index                            : 0 - 23 (24 frames)
+Input bit depth                        : (Y:8, C:8)
+Internal bit depth                     : (Y:8, C:8)
+Output bit depth                       : (Y:8, C:8)
+Reference bit depth                    : (Y:8, C:8)
+
+-----360 Video Parameters----
+InputGeometryType: Cubemap 
+ChromaFormat:1 Resolution:960x960xF6 FPStructure:3x2 | Id_4(R_0) Id_0(R_0) Id_5(R_0)  | Id_3(R_180) Id_1(R_270) Id_2(R_0)  | 
+
+CodingGeometryType: Cubemap 
+ChromaFormat:1 Resolution:960x960xF6 FPStructure:3x2 | Id_4(R_0) Id_0(R_0) Id_5(R_0)  | Id_3(R_180) Id_1(R_270) Id_2(R_0)  | 
+
+Packed frame resolution: 2880x1920 (Input face resolution:0x0)
+Interpolation method for luma: 5, interpolation method for chroma: 4
+ChromaSampleLocType: 2
+Geometry conversion is skipped!
+
+                   Input ChromaFormatIDC =   4:2:0
+                Internal ChromaFormatIDC =   4:2:0 ChromaResample: 0
+                  Output ChromaFormatIDC =   4:2:0
+
+Frame#      PSNR_Y           PSNR_U           PSNR_V     | SPSNR_NN_Y       SPSNR_NN_U       SPSNR_NN_V     |   WSPSNR_Y         WSPSNR_U         WSPSNR_V     |  SPSNR_I_Y        SPSNR_I_U        SPSNR_I_V     | CPP-PSNR_Y       CPP-PSNR_U       CPP-PSNR_V     | 
+
+Frame:0  -37.8436 dB    -35.6591 dB    -37.6527 dB | -37.7749 dB    -35.7226 dB    -37.4797 dB | -37.7835 dB    -35.7290 dB    -37.4865 dB | 6.0416 dB    6.9279 dB    -41.8439 dB |   -nan dB      -nan dB      -nan dB |
+Frame:1  -37.6594 dB    -35.5595 dB    -36.8265 dB | -37.6250 dB    -35.6122 dB    -36.7081 dB | -37.6324 dB    -35.6190 dB    -36.7108 dB | 6.0416 dB    -39.6103 dB    -39.8391 dB |   -nan dB      -nan dB      -nan dB |
+Frame:2  -37.9776 dB    -35.5495 dB    -38.1868 dB | -37.8974 dB    -35.6059 dB    -38.1597 dB | -37.9065 dB    -35.6127 dB    -38.1577 dB | 6.0486 dB    -41.8444 dB    7.0722 dB |   -nan dB      -nan dB      -nan dB |
+Frame:3  -37.8012 dB    -35.5473 dB    -37.4724 dB | -37.7425 dB    -35.6028 dB    -37.3066 dB | -37.7493 dB    -35.6097 dB    -37.3141 dB | 6.0608 dB    -39.8385 dB    -39.6110 dB |   -nan dB      -nan dB      -nan dB |
+Frame:4  -37.6242 dB    -35.5480 dB    -36.7025 dB | -37.6054 dB    -35.6045 dB    -36.6919 dB | -37.6100 dB    -35.6116 dB    -36.6897 dB | 6.0741 dB    6.9293 dB    -41.8439 dB |   -nan dB      -nan dB      -nan dB |
+Frame:5  -37.9138 dB    -35.5479 dB    -37.9373 dB | -37.8389 dB    -35.6031 dB    -37.8361 dB | -37.8470 dB    -35.6102 dB    -37.8381 dB | 6.0908 dB    -39.6103 dB    -39.8392 dB |   -nan dB      -nan dB      -nan dB |
+Frame:6  -37.7496 dB    -35.5495 dB    -37.2423 dB | -37.7009 dB    -35.6059 dB    -37.0930 dB | -37.7066 dB    -35.6127 dB    -37.0987 dB | 6.1087 dB    -41.8444 dB    7.0746 dB |   -nan dB      -nan dB      -nan dB |
+Frame:7  -38.0174 dB    -35.5473 dB    -38.3420 dB | -37.9366 dB    -35.6028 dB    -38.3686 dB | -37.9454 dB    -35.6097 dB    -38.3652 dB | 6.1270 dB    -39.8385 dB    -39.6110 dB |   -nan dB      -nan dB      -nan dB |
+Frame:8  -37.8539 dB    -35.5480 dB    -37.6990 dB | -37.7867 dB    -35.6045 dB    -37.5402 dB | -37.7934 dB    -35.6116 dB    -37.5462 dB | 6.1477 dB    6.9311 dB    -41.8439 dB |   -nan dB      -nan dB      -nan dB |
+Frame:9  -37.6798 dB    -35.5479 dB    -36.9223 dB | -37.6451 dB    -35.6031 dB    -36.8102 dB | -37.6500 dB    -35.6102 dB    -36.8135 dB | 6.1635 dB    -39.6103 dB    -39.8392 dB |   -nan dB      -nan dB      -nan dB |
+Frame:10  -37.9807 dB    -35.5495 dB    -38.1982 dB | -37.9011 dB    -35.6059 dB    -38.1744 dB | -37.9096 dB    -35.6127 dB    -38.1730 dB | 6.2014 dB    -41.8444 dB    7.0754 dB |   -nan dB      -nan dB      -nan dB |
+Frame:11  -37.8120 dB    -35.5473 dB    -37.5176 dB | -37.7522 dB    -35.6028 dB    -37.3631 dB | -37.7591 dB    -35.6097 dB    -37.3685 dB | 6.2185 dB    -39.8385 dB    -39.6110 dB |   -nan dB      -nan dB      -nan dB |
+Frame:12  -37.6231 dB    -35.5480 dB    -36.6961 dB | -37.6043 dB    -35.6045 dB    -36.6891 dB | -37.6093 dB    -35.6116 dB    -36.6859 dB | 6.2313 dB    6.9315 dB    -41.8439 dB |   -nan dB      -nan dB      -nan dB |
+Frame:13  -37.9172 dB    -35.5479 dB    -37.9487 dB | -37.8414 dB    -35.6031 dB    -37.8440 dB | -37.8498 dB    -35.6102 dB    -37.8467 dB | 6.2424 dB    -39.6103 dB    -39.8392 dB |   -nan dB      -nan dB      -nan dB |
+Frame:14  -37.7333 dB    -35.5495 dB    -37.1651 dB | -37.6864 dB    -35.6059 dB    -37.0066 dB | -37.6923 dB    -35.6127 dB    -37.0111 dB | 6.2644 dB    -41.8444 dB    7.0790 dB |   -nan dB      -nan dB      -nan dB |
+Frame:15  -38.0194 dB    -35.5473 dB    -38.3473 dB | -37.9379 dB    -35.6028 dB    -38.3711 dB | -37.9469 dB    -35.6097 dB    -38.3673 dB | 6.2800 dB    -39.8385 dB    -39.6110 dB |   -nan dB      -nan dB      -nan dB |
+Frame:16  -37.8406 dB    -35.5480 dB    -37.6382 dB | -37.7732 dB    -35.6045 dB    -37.4623 dB | -37.7812 dB    -35.6116 dB    -37.4688 dB | 6.2910 dB    6.9309 dB    -41.8439 dB |   -nan dB      -nan dB      -nan dB |
+Frame:17  -37.6731 dB    -35.5479 dB    -36.8842 dB | -37.6400 dB    -35.6031 dB    -36.7918 dB | -37.6457 dB    -35.6102 dB    -36.7935 dB | 6.3061 dB    -39.6103 dB    -39.8392 dB |   -nan dB      -nan dB      -nan dB |
+Frame:18  -37.9694 dB    -35.5495 dB    -38.1531 dB | -37.8896 dB    -35.6059 dB    -38.1087 dB | -37.8984 dB    -35.6127 dB    -38.1075 dB | 6.3221 dB    -41.8444 dB    7.0786 dB |   -nan dB      -nan dB      -nan dB |
+Frame:19  -37.8030 dB    -35.5473 dB    -37.4754 dB | -37.7440 dB    -35.6028 dB    -37.3088 dB | -37.7506 dB    -35.6097 dB    -37.3143 dB | 6.3314 dB    -39.8385 dB    -39.6110 dB |   -nan dB      -nan dB      -nan dB |
+Frame:20  -37.5411 dB    -35.5480 dB    -36.2974 dB | -37.5370 dB    -35.6045 dB    -36.2675 dB | -37.5399 dB    -35.6116 dB    -36.2682 dB | 6.3557 dB    6.9281 dB    -41.8439 dB |   -nan dB      -nan dB      -nan dB |
+Frame:21  -37.9191 dB    -35.5479 dB    -37.9537 dB | -37.8428 dB    -35.6032 dB    -37.8476 dB | -37.8513 dB    -35.6102 dB    -37.8497 dB | 6.3722 dB    -39.6103 dB    -39.8392 dB |   -nan dB      -nan dB      -nan dB |
+Frame:22  -37.7381 dB    -35.5495 dB    -37.1842 dB | -37.6897 dB    -35.6059 dB    -37.0223 dB | -37.6962 dB    -35.6127 dB    -37.0268 dB | 6.4090 dB    -41.8444 dB    7.0801 dB |   -nan dB      -nan dB      -nan dB |
+Frame:23  -38.0223 dB    -35.5473 dB    -38.3548 dB | -37.9399 dB    -35.6028 dB    -38.3750 dB | -37.9491 dB    -35.6097 dB    -38.3717 dB | 6.4193 dB    -39.8385 dB    -39.6110 dB |   -nan dB      -nan dB      -nan dB |
+
+Average PSNRS 
+
+ -37.8214     -35.5533     -37.5332  | -37.7639     -35.6094     -37.4428  | -37.7710     -35.6163     -37.4447  | 6.2145     -28.5909     -28.5544  |   -nan       -nan       -nan  |
+
+ Total Time:       13.562 sec.

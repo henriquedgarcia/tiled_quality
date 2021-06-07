@@ -1,0 +1,135 @@
+
+Projection format conversion tool for 360 video: Version [TApp360_v1.0][Linux][GCC 7.5.0][64 bit] 
+
+        --help                   this help text
+  -c                             configuration file name
+  -w,   --WarnUnknowParameter    warn for unknown configuration parameters
+                                 instead of failing
+  -i,   --InputFile              Original YUV input file name
+  -o,   --OutputFile             Converted YUV output file name
+  -r,   --RefFile                Ref YUV file name for PSNR calculation
+  -s,   --SphFile                Spherical points data file name for
+                                 S-PSNR-NN/S-PSNR-I calculation
+  -v,   --ViewPortFile           Viewport paramete file name for dynamic
+                                 viewport generation
+  -p,   --SpherePointsFile       File name for point coordinates on the sphere
+                                 of the converted projction
+  -wdt, --SourceWidth            Source picture width
+  -hgt, --SourceHeight           Source picture height
+        --InputBitDepth          Bit-depth of input file
+        --OutputBitDepth         Bit-depth of output file
+                                 (default:InternalBitDepth)
+        --ReferenceBitDepth      Bit-depth of output file
+                                 (default:OutputBitDepth)
+        --MSBExtendedBitDepth    bit depth of luma component after addition of
+                                 MSBs of value 0 (used for synthesising High
+                                 Dynamic Range source material).
+                                 (default:InputBitDepth)
+        --InternalBitDepth       Bit-depth the codec operates at.
+                                 (default:MSBExtendedBitDepth). If different to
+                                 MSBExtendedBitDepth, source data will be
+                                 converted
+        --InputBitDepthC         As per InputBitDepth but for chroma component.
+                                 (default:InputBitDepth)
+        --OutputBitDepthC        As per OutputBitDepth but for chroma component.
+                                 (default:InternalBitDepthC)
+        --ReferenceBitDepthC     As per OutputBitDepth but for chroma component.
+                                 (default:OutputBitDepthC)
+        --MSBExtendedBitDepthC   As per MSBExtendedBitDepth but for chroma
+                                 component. (default:MSBExtendedBitDepth)
+        --InternalBitDepthC      As per InternalBitDepth but for chroma
+                                 component. (default:InternalBitDepth)
+  -intercf, --InternalChromaFormat
+                                 InternalChromaFormatIDC (400|420|422|444 or set
+                                 0 (default) for same as OutputChromaFormat)
+  -rc,  --ResampleChroma         ResampleChroma indiates to do conversion with
+                                 aligned phase with luma
+  -ocf, --OutputChromaFormat     OutputChromaFormatIDC (400|420|422|444 or set 0
+                                 (default) for same as InputChromaFormat)
+        --InputColourSpaceConvertColour space conversion to apply to input
+                                 video. Permitted values are (empty
+                                 string=UNCHANGED) UNCHANGED, YCbCrtoYCrCb,
+                                 YCbCrtoYYY or RGBtoGBR
+        --OutputInternalColourSpace
+                                 If true, then no colour space conversion is
+                                 applied for reconstructed video, otherwise
+                                 inverse of input is applied.
+  -icf, --InputChromaFormat      InputChromaFormatIDC
+        --ConformanceWindowMode  Window conformance mode (0: no window,
+                                 1:automatic padding, 2:padding, 3:conformance
+  -pdx, --HorizontalPadding      Horizontal source padding for conformance
+                                 window mode 2
+  -pdy, --VerticalPadding        Vertical source padding for conformance window
+                                 mode 2
+        --ConfWinLeft            Left offset for window conformance mode 3
+        --ConfWinRight           Right offset for window conformance mode 3
+        --ConfWinTop             Top offset for window conformance mode 3
+        --ConfWinBottom          Bottom offset for window conformance mode 3
+        --FaceSizeAlignment      Unit size for alignment
+  -fr,  --FrameRate              Frame rate
+  -fs,  --FrameSkip              Number of frames to skip at start of input YUV
+  -ts,  --TemporalSubsampleRatio Temporal sub-sample ratio when reading input
+                                 YUV
+  -f,   --FramesToBeEncoded      Number of frames to be converted (default=all)
+        --ClipInputVideoToRec709Range
+                                 If true then clip input video to the Rec. 709
+                                 Range on loading when InternalBitDepth is less
+                                 than MSBExtendedBitDepth
+        --ClipOutputVideoToRec709Range
+                                 If true then clip output video to the Rec. 709
+                                 Range on saving when OutputBitDepth is less
+                                 than InternalBitDepth
+        --SummaryOutFilename     Filename to use for producing summary output
+                                 file. If empty, do not produce a file.
+        --SummaryPicFilenameBase Base filename to use for producing summary
+                                 picture output files. The actual filenames used
+                                 will have I.txt, P.txt and B.txt appended. If
+                                 empty, do not produce a file.
+        --SummaryVerboseness     Specifies the level of the verboseness of the
+                                 text output
+  -psnr, --PSNR                  Flag to enable psnr calculation
+  -spsnr_nn, --SPSNR_NN          Flag to enable spsnr-nn calculation
+  -wspsnr, --WSPSNR              Flag to enable ws-psnr calculation
+  -spsnr_i, --SPSNR_I            Flag to enable spsnr-i calculation
+  -cpsnr, --CPP_PSNR             Flag to enable cpp-psnr calculation
+  -cwidth, --CPP_Width           Width Of CPP For CPP PSNR Calculation
+  -cheight, --CPP_Height         Height Of CPP For CPP PSNR Calculation
+        --ReferenceGeometryType  The Reference geometry for quality estimation
+        --ReferenceFPStructure   Reference framepacking structure
+        --ReferenceCompactFPStructure
+                                 Compact coding framepacking structure; only
+                                 valid for octahedron and icosahedron projection
+                                 format
+  -rcf, --ReferenceChromaFormat  ReferenceChromaFormatIDC
+        --ReferenceFaceHeight    Reference Face height for
+        --ReferenceFaceWidth     Reference Face width for
+        --InputGeometryType      The geometry of input 360 video
+        --SourceFPStructure      Source framepacking structure
+        --SourceCompactFPStructure
+                                 Compact source framepacking structure; only
+                                 valid for octahedron and icosahedron projection
+                                 format
+        --CodingGeometryType     The output geometry for conversion
+        --CodingFPStructure      Coding framepacking structure
+        --CodingCompactFPStructure
+                                 Compact coding framepacking structure; only
+                                 valid for octahedron and icosahedron projection
+                                 format
+        --SVideoRotation         Rotation along X, Y, Z
+        --ViewPortSettings       Viewport settings for static viewport
+                                 generation
+        --CodingFaceWidth        Face width for coding
+        --CodingFaceHeight       Face height for coding
+  -interpY, --InterpolationMethodY
+                                 Interpolation method for luma, 0: default
+                                 setting(lanczos3); 1:NN, 2: bilinear, 3:
+                                 bicubic, 4: lanczos2, 5: lanczos3
+  -interpC, --InterpolationMethodC
+                                 Interpolation method for chroma, 0: default
+                                 setting(lanczos2); 1:NN, 2: bilinear, 3:
+                                 bicubic, 4: lanczos2, 5: lanczos3
+  -csl, --ChromaSampleLocType    Chroma sample location type relative to luma,
+                                 0: 0.5 shift in vertical direction; 1: 0.5
+                                 shift in both directions, 2: aligned with luma
+                                 (default setting), 3: 0.5 shift in horizontal
+                                 direction
